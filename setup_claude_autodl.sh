@@ -76,8 +76,8 @@ cat > "$CLAUDE_DIR/settings.json" << 'EOF'
   "hasCompletedOnboarding": true,
   "env": {
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
-    "ANTHROPIC_AUTH_TOKEN": "your api key",
-    "ANTHROPIC_BASE_URL": "https://aicanapi.com"
+    "ANTHROPIC_AUTH_TOKEN": "你的密钥",
+    "ANTHROPIC_BASE_URL": "你的中转站" 
   },
   "includeCoAuthoredBy": false
 }
