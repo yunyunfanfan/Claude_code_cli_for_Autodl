@@ -1,6 +1,6 @@
-# Claude Code CLI 在 AutoDL 上的使用指南（aicanapi 版）
+# Claude Code CLI 在 AutoDL 上的使用指南（中转站版）
 
-AutoDL 是国内 GPU 云平台，直连 Anthropic API 会超时。本方案通过 [aicanapi.com](https://aicanapi.com) 中转，并针对 AutoDL 环境做了专项优化，一键配置开箱即用。
+AutoDL 是国内 GPU 云平台，直连 Anthropic API 会超时。本方案通过中转站，并针对 AutoDL 环境做了专项优化，一键配置开箱即用。
 
 ---
 
@@ -119,8 +119,8 @@ claude
 }
 ```
 
-- `ANTHROPIC_AUTH_TOKEN`：aicanapi 的 Key，Claude Code 启动时自动注入
-- `ANTHROPIC_BASE_URL`：指向 aicanapi 中转地址，绕过国内网络限制
+- `ANTHROPIC_AUTH_TOKEN`： Key，Claude Code 启动时自动注入
+- `ANTHROPIC_BASE_URL`：指向中转地址，绕过国内网络限制
 - `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`：禁用遥测、更新检查等会访问境外地址的后台请求，避免报错干扰正常使用
 
 **`~/.claude/settings.local.json`**
